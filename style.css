@@ -1,0 +1,673 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+.menu {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.menu__header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.titulo {
+    display: flex;
+}
+
+.menu__title {
+    margin-left: 5px;
+    color: #464646;
+    width: 150px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+
+}
+
+.menu__list {
+    padding-top: 4px;
+    display: flex;
+    gap: 50px;
+}
+
+.menu__list__item {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+
+}
+
+.menu__list__item__contato {
+    font-weight: bold;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+
+}
+
+/*Sección Title*/
+
+.title {
+    margin-top: 20px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.title__container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.title__bio {
+
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    /* Preto/100% */
+    color: #464646;
+}
+
+.title__subsection {
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+}
+
+.title__network {
+    display: flex;
+    gap: 50px;
+}
+
+.title__network__item a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+/*Sección About*/
+
+.about {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    gap: 10px;
+    background: #EAF2FD;
+    width: 100vw;
+}
+
+.about__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.about__paragraph {
+    width: 60%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* Preto/100% */
+
+    color: #464646;
+
+}
+
+/*Sección Hobbies*/
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills__title {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 20px 0 20px 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.skills__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+
+    /* Preto/branco */
+
+    background: #FFFFFF;
+
+}
+
+/* Experiencia Académica*/
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hobbies__title {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 20px 0 20px 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.hobbies__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+
+    width: 176px;
+    height: 174px;
+
+    /* Preto/branco */
+
+    background: #FFFFFF;
+}
+
+/* experiencia*/
+
+.academic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #EAF2FD;
+    margin-top: 5%;
+    height: auto;
+    width: auto;
+}
+
+.academic__title {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 80px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+    margin-bottom: 20px;
+}
+
+.academic__courses {
+    display: flex;
+    gap: 40px;
+}
+
+.academic__courses__item__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 368px;
+    height: 286px;
+    background: #FFFFFF;
+}
+
+.academic__courses__item__title {
+    margin-top: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+}
+
+.academic__courses__item__subtitle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Preto/100% */
+
+    color: #464646;
+}
+
+/*Contacto*/
+
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experience__section__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #464646;
+    width: 100vw;
+    margin: 20px 0 20px 0;
+}
+
+.experiencie__box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.experience__info {
+    width: 260px;
+}
+
+.experience__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+
+}
+
+
+.experience__text {
+    margin-top: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.experiencia__botao--repo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    width: 105px;
+    height: 51px;
+    border: solid 1px #2A7AE4;
+
+}
+
+.experience__botao--demo {
+    padding: 16px;
+    gap: 10px;
+    width: 105px;
+    height: 51px;
+    background: #2A7AE4;
+    border: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-top: 10px;
+
+}
+
+.formcontato {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    gap: 10px;
+    background: #EAF2FD;
+
+}
+
+.formcontato__contacto {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.formcontato__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+
+}
+
+.formcontato__subtext {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.formcontato__form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.formcontato__input {
+    outline: none;
+    padding-left: 10px;
+    width: 656px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    border-bottom: solid #C8C8C8 2px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #A2A2A2;
+}
+
+.formcontato__textarea {
+    outline: none;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    border-bottom: solid #C8C8C8 2px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #A2A2A2;
+    padding: 16px;
+    resize: none;
+}
+
+.formcontato__botao {
+    padding: 16px;
+    gap: 10px;
+    width: 144px;
+    height: 51px;
+    background: #2A7AE4;
+    border: none;
+    color: white;
+}
+
+
+/*footeer*/
+
+.footer__rodape {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #464646;
+
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+
+    .menu__list__item {
+        display: none;
+    }
+
+    .title__profile {
+        width: 40%;
+    }
+
+    .about__paragraph {
+        width: 100%;
+    }
+
+    .academic__courses__item__img {
+        width: auto;
+        height: auto;
+    }
+
+    .academic__courses__item__title {
+        width: auto;
+        height: auto;
+    }
+
+    .experience__info {
+        width: 100%;
+    }
+
+    .formcontato__img {
+        display: none;
+    }
+
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+    /*Menu*/
+    .menu__list__item__contato {
+        font-weight: 400;
+    }
+    .title__profile{
+        margin-left: -250px;
+    }
+    .title__container {
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    .title__bio {
+
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .title__subsection {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .title__network{
+        width: 100vw;
+        gap: 40px;
+       
+
+    }
+    .title__network__item a {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .title__network__item img{
+       padding-left: 3px;
+    }
+
+    .about {
+        padding: 15px 15px 15px 15px;
+    }
+
+    .academic__courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .academic__courses__item__img {
+        width: 350px;
+        height: 150px;
+    }
+
+    .academic__courses__item__img img {
+        width: 120px;
+        height: 100px;
+    }
+
+    .experience__img {
+        width: 350px;
+        height: 150px;
+    }
+
+    .experience__info {
+        margin-left: 30px;
+    }
+
+    .experience__demo a {
+        margin-left: 10px;
+    }
+
+    .formcontato__contacto {
+        width: 400px;
+        height: 675px;
+    }
+
+    .formcontato__title {
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .formcontato__subtext {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .formcontato__input {
+        width: 350px;
+    }
+
+    .formcontato__textarea {
+        width: 350px;
+    }
+
+
+}

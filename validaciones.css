@@ -1,0 +1,38 @@
+.ocultar {
+    display: none;
+}
+.validationName, .validationEmail,.validationAsunto, .validationArea{
+    border: solid red;
+}
+.pname{
+    position: absolute;
+    margin-top: 65px;
+    font-weight: bold;
+    font-size: small;
+    color: red;
+}
+.pemail{
+    position: absolute;
+    margin-top: 165px;
+    font-weight: bold; 
+    font-size: small;
+    color: red;
+}
+.pasunto{
+    position: absolute;
+    margin-top: 260px;
+    font-weight: bold; 
+    font-size: small;
+    color: red;
+}
+.pmensaje{
+    position: absolute;
+    margin-top: 415px;
+    font-weight: bold; 
+    font-size: small;
+    color: red;
+}
+.desable{
+    background-color: gray;
+    pointer-events: none;
+}
